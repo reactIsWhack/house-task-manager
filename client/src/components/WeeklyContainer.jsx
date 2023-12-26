@@ -11,7 +11,6 @@ function WeeklyContainer() {
     if (!acc[week]) {
       acc[week] = [];
     }
-    console.log(acc);
 
     acc[week].push(task);
     return acc;
