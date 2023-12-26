@@ -72,8 +72,6 @@ const moveTask = asyncHandler(async (req, res) => {
 
   const task = await Task.findById(id);
 
-  // Validation
-
   if (!task) {
     res.status(404);
     throw new Error('Task not found');

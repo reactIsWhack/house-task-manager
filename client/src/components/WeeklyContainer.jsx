@@ -7,7 +7,6 @@ function WeeklyContainer() {
 
   const groupedByWeek = mergedTasks.reduce((acc, task) => {
     const week = task.week - 1; // Replace 'week' with the actual property name
-    console.log(week, 'week');
 
     if (!acc[week]) {
       acc[week] = [];
